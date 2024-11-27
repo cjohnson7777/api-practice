@@ -21,7 +21,7 @@ async def root(): #the function
 def get_posts():
     return {"Pretend there are posts here"}
 
-@app.post("/createpost")
+@app.post("/post")
 def create_posts(new_post: Post):
     print(new_post.dict())    
     return {"data": new_post}
